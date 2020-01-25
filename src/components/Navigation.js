@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, withPrefix, StaticQuery, graphql } from 'gatsby';
 import Icons from './Icons';
 
-import logo from '../assets/logo.png';
+import logo from '../assets/site-logo.png';
 
 const Navigation = ({ location }) => (
   <StaticQuery
