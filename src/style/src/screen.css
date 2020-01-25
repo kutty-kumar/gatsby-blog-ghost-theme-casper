@@ -1640,7 +1640,7 @@ Usage (In Ghost editor):
     align-items: center;
     height: 60px;
     border-bottom: rgba(0,0,0,0.06) 1px solid;
-    background: rgba(255,255,255,0.95);
+    background: rgba(0, 0, 0, 0.95);
     transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
     transform: translate3d(0, -120%, 0);
 }
