@@ -37,6 +37,7 @@ const Navigation = ({ location }) => (
             {!isHomepage && (
               <Link className='site-nav-logo' to={'/'}>
                 <img src={logo} alt={siteMetadata.title} />
+                <span>{siteMetadata.title}</span>
               </Link>
             )}
             <ul className='nav' role='menu'>
