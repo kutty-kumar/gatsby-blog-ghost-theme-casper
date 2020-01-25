@@ -10,7 +10,7 @@ import Navigation from '../components/Navigation';
 import Layout from '../components/Layout';
 import Icons from '../components/Icons';
 import RelatedPosts from '../components/RelatedPosts';
-import logo from '../assets/logo.png';
+import logo from '../assets/site-logo.png';
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 class BlogPostTemplate extends React.Component {
