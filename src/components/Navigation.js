@@ -36,7 +36,9 @@ const Navigation = ({ location }) => (
           <div className='site-nav-left'>
             {!isHomepage && (
               <Link className='site-nav-logo' to={'/'}>
-                <img src={logo} alt={siteMetadata.title} />
+                <img src={logo} alt={siteMetadata.title} >
+                <span>EnlightenTech</span>
+                </img>
               </Link>
             )}
             <ul className='nav' role='menu'>
