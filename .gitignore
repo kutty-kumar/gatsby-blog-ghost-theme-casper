@@ -6,3 +6,5 @@ public
 .cache/
 yarn.lock
 yarn-error.log
+.idea/
+*.xml
