@@ -79,20 +79,6 @@ class Template extends React.Component {
                       >
                         Twitter
                       </a>
-                      <a
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        href='https://ghost.org'
-                      >
-                        Theme By Ghost
-                      </a>
-                      <a
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        href='https://gatsbyjs.org'
-                      >
-                        Powered By Gatsby
-                      </a>
                     </nav>
                   </div>
                 </footer>
