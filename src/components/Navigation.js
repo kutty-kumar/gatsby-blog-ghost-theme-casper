@@ -35,12 +35,9 @@ const Navigation = ({ location }) => (
         <nav className='site-nav'>
           <div className='site-nav-left'>
             {!isHomepage && (
-              <div>
               <Link className='site-nav-logo' to={'/'}>
                 <img src={logo} alt={siteMetadata.title} />
               </Link>
-              <span className='site-nav-logo-span'>{siteMetadata.title}</span>
-              </div>
             )}
             <ul className='nav' role='menu'>
               {navItems.edges.map(({ node }, index) => {
