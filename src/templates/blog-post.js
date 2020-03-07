@@ -106,6 +106,13 @@ class BlogPostTemplate extends React.Component {
           'width=550,height=235'
         );
         break;
+      case 'linkedIn':
+        window.open(
+          `https://www.linkedin.com/sharing/share-offsite/?url=${url}`,
+          'share-linkedIn',
+          'width=550,height=235'
+        );
+        break;
       default:
         break;
     }
@@ -268,10 +275,10 @@ class BlogPostTemplate extends React.Component {
             </a>
             <a
               className='floating-header-share-fb'
-              data-share-site='facebook'
+              data-share-site='linkedIn'
               onClick={this.shareHandler}
             >
-              <Icons.facebook />
+              <Icons.linkedIn />
             </a>
           </div>
           <progress ref={this.progressBarRef} className='progress' value='0'>

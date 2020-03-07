@@ -75,16 +75,16 @@ const AuthorTemplate = ({ pageContext, data, location }) => {
                   <Icons.twitter />
                 </a>
               )}
-              {author.facebook && (
-                <a
-                  className='social-link social-link-fb'
-                  target='_blank'
-                  rel='noreferrer noopener'
-                  href={getSocialUrl('facebook', author.facebook)}
-                >
-                  <Icons.facebook />
-                </a>
-              )}
+              {/*{author.facebook && (*/}
+              {/*<a*/}
+              {/*className='social-link social-link-fb'*/}
+              {/*target='_blank'*/}
+              {/*rel='noreferrer noopener'*/}
+              {/*href={getSocialUrl('facebook', author.facebook)}*/}
+              {/*>*/}
+              {/*<Icons.facebook />*/}
+              {/*</a>*/}
+              {/*)}*/}
               {author.linkedIn && (
                 <a
                   className='social-link social-link-fb'

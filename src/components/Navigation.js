@@ -23,6 +23,7 @@ const Navigation = ({ location }) => (
             social {
               facebook
               twitter
+              linkedIn
             }
           }
         }
@@ -56,14 +57,24 @@ const Navigation = ({ location }) => (
           </div>
           <div className='site-nav-right'>
             <div className='social-links'>
-              {siteMetadata.social.facebook && (
+              {/*{siteMetadata.social.facebook && (*/}
+              {/*<a*/}
+              {/*className='social-link social-link-fb'*/}
+              {/*target='_blank'*/}
+              {/*rel='noopener noreferrer'*/}
+              {/*href={`https://facebook.com/${siteMetadata.social.facebook}`}*/}
+              {/*>*/}
+              {/*<Icons.facebook />*/}
+              {/*</a>*/}
+              {/*)}*/}
+              {siteMetadata.social.linkedIn && (
                 <a
                   className='social-link social-link-fb'
                   target='_blank'
                   rel='noopener noreferrer'
-                  href={`https://facebook.com/${siteMetadata.social.facebook}`}
+                  href={`https://linkedin.com/in/${siteMetadata.social.linkedIn}`}
                 >
-                  <Icons.facebook />
+                  <Icons.linkedIn />
                 </a>
               )}
               {siteMetadata.social.twitter && (
@@ -82,9 +93,7 @@ const Navigation = ({ location }) => (
               className='rss-button'
               target='_blank'
               rel='noopener noreferrer'
-              href={`https://feedly.com/i/subscription/feed/${
-                siteMetadata.siteUrl
-              }/rss.xml`}
+              href={`https://feedly.com/i/subscription/feed/${siteMetadata.siteUrl}/rss.xml`}
             >
               <Icons.rss />
             </a>
