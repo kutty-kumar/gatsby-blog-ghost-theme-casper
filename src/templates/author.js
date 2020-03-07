@@ -6,7 +6,7 @@ import Layout from '../components/Layout';
 import PostList from '../components/PostList';
 import Navigation from '../components/Navigation';
 import Icons from '../components/Icons';
-import { getSocialUrl } from '../utils/url';
+import { getLinkedInUrl, getSocialUrl } from '../utils/url';
 
 const AuthorTemplate = ({ pageContext, data, location }) => {
   const { author } = pageContext;
@@ -83,6 +83,16 @@ const AuthorTemplate = ({ pageContext, data, location }) => {
                   href={getSocialUrl('facebook', author.facebook)}
                 >
                   <Icons.facebook />
+                </a>
+              )}
+              {author.linkedIn && (
+                <a
+                  className='social-link social-link-fb'
+                  target='_blank'
+                  rel='noreferrer noopener'
+                  href={getLinkedInUrl('in', author.linkedIn)}
+                >
+                  <Icons.linkedIn />
                 </a>
               )}
               <a

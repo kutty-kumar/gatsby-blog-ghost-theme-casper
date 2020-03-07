@@ -18,10 +18,15 @@ const getSocialUrl = (site, username) => {
   return `https://${site}.com/${username}`;
 };
 
+const getLinkedInUrl = (site, username) => {
+ return `https://linkedin.com/${site}/${username}`;
+};
+
 export {
   getFacebookUrl,
   getTwitterUrl,
   getInstagramUrl,
   getGitHubUrl,
   getSocialUrl,
+  getLinkedInUrl
 };
