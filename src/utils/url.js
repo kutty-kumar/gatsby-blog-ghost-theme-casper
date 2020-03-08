@@ -19,7 +19,7 @@ const getSocialUrl = (site, username) => {
 };
 
 const getLinkedInUrl = (site, username) => {
- return `https://linkedin.com/${site}/${username}`;
+  return `https://linkedin.com/${site}/${username}`;
 };
 
 export {
@@ -28,5 +28,5 @@ export {
   getInstagramUrl,
   getGitHubUrl,
   getSocialUrl,
-  getLinkedInUrl
+  getLinkedInUrl,
 };

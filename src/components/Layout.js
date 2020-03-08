@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, StaticQuery, graphql } from 'gatsby';
 import Helmet from 'react-helmet';
-import { getSocialUrl } from '../utils/url';
+import { getLinkedInUrl, getSocialUrl } from '../utils/url';
 
 import '../style/screen.css';
 import '../style/style.css';
@@ -47,7 +47,7 @@ class Template extends React.Component {
                   siteMetadata {
                     title
                     social {
-                      facebook
+                      linkedIn
                       twitter
                     }
                   }
@@ -56,7 +56,7 @@ class Template extends React.Component {
             `}
             render={data => {
               const { title, social } = data.site.siteMetadata;
-              const { facebook, twitter } = social;
+              const { linkedIn, twitter } = social;
               return (
                 <footer className='site-footer outer'>
                   <div className='site-footer-content inner'>
@@ -68,9 +68,9 @@ class Template extends React.Component {
                       <a
                         target='_blank'
                         rel='noopener noreferrer'
-                        href={getSocialUrl('facebook', facebook)}
+                        href={getLinkedInUrl('in', linkedIn)}
                       >
-                        Facebook
+                        LinkedIn
                       </a>
                       <a
                         target='_blank'
