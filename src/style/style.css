@@ -10,15 +10,9 @@
   object-position: center -320px !important;
 }
 
-/**
- * If you already use line highlighting
- */
-
-/* Adjust the position of the line numbers */
 .gatsby-highlight pre[class*="language-"].line-numbers {
-  padding: 0;
   padding-left: 2.8em;
-  overflow: initial;}
+}
 
 /**
  * If you only want to use line numbering
@@ -30,8 +24,10 @@
   margin: 0.5em 0;
   padding: 1em;
   overflow: auto;
-  overflow: initial;
-  float: left; /* 1 */
-  min-width: 100%; /* 2 */
 }
 
+.gatsby-highlight pre[class*="language-"].line-numbers {
+  padding: 0;
+  padding-left: 2.8em;
+  overflow: initial;
+}
