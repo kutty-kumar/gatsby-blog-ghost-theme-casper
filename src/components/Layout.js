@@ -19,7 +19,14 @@ class Template extends React.Component {
     const { location, children, hideFooter } = this.props;
 
     return (
-      <div className='site-wrapper'>
+      <div
+        className='site-wrapper'
+        style={{
+          backgroundColor: 'var(--bg)',
+          color: 'var(--textNormal)',
+          transition: 'color 0.2s ease-out, background 0.2s ease-out',
+        }}
+      >
         {/* {body_class} {block ' special_body_class' */}
         <Helmet
           htmlAttributes={{ lang: 'en' }}
