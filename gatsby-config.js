@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = themeOptions => ({
   siteMetadata: {
     title: 'Casper Theme Gatsby',
-    author: 'Sasivarnan R',
+    author: 'Kumar D',
     description: 'Ghost Casper theme for Gatsby',
     siteUrl: 'https://geekscreed.com',
     social: {

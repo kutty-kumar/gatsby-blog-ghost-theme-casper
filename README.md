@@ -135,4 +135,4 @@ For detailed usage of gatsby themes, refer [themes documentation](https://www.ga
 
 ## Copyright & License
 
-Copyright (c) 2013-2019 Ghost Foundation / Sasivarnan R - Released under the [MIT license](LICENSE).
+Copyright (c) 2013-2019 Ghost Foundation / Kumar D - Released under the [MIT license](LICENSE).
